@@ -5,13 +5,13 @@ window.addEventListener("load", function () {
   // Add an alert to notify the user that all fields are required.
   // Alert needs to happen before submit is processed
   const form = document.querySelector("form");
-  let pilot = document.querySelector("input[name=pilotName]").value;
-  let copilot = document.querySelector("input[name=copilotName]").value;
-  let fuelLevel = document.querySelector("input[name=fuelLevel]").value;
-  let cargoLevel = document.querySelector("input[name=cargoMass]").value;
-  const list = document.getElementById("faultyItems");
 
   form.addEventListener("submit", (event) => {
+    const pilot = document.querySelector("input[name=pilotName]").value;
+    const copilot = document.querySelector("input[name=copilotName]").value;
+    const fuelLevel = document.querySelector("input[name=fuelLevel]").value;
+    const cargoLevel = document.querySelector("input[name=cargoMass]").value;
+    const list = document.getElementById("faultyItems");
     formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel);
     event.preventDefault();
   });
