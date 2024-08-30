@@ -29,10 +29,10 @@ function validateInput(testInput) {
     return "Empty";
   }
   if (!isNaN(testInput)) {
-    return "Is a number";
+    return "Is a Number";
   }
   if (isNaN(testInput)) {
-    return "Not a number";
+    return "Not a Number";
   }
 }
 
@@ -46,14 +46,14 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     return alert("All fields are required!");
   }
   if (
-    validateInput(pilot) === "Is a number" ||
-    validateInput(copilot) === "Is a number"
+    validateInput(pilot) === "Is a Number" ||
+    validateInput(copilot) === "Is a Number"
   ) {
     return alert("Make sure to enter valid information for each field!");
   }
   if (
-    validateInput(fuelLevel) === "Not a number" ||
-    validateInput(cargoLevel) === "Not a number"
+    validateInput(fuelLevel) === "Not a Number" ||
+    validateInput(cargoLevel) === "Not a Number"
   ) {
     return alert("Make sure to enter valid information for each field!");
   }
